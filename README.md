@@ -1,41 +1,14 @@
-# Multiplication Table
+"""
+multiplication-table.py
+Author: Andrew
+Credit: stack overflow
+Assignment:
 
-*Challenge by Jack Boffa, HHS &apos;14*
-
-Write and submit a Python program that prints a multiplication table.
-The user must be asked to give the width and height of the table 
-before it is printed.
-
-It may be simpler to start by printing a grid consisting of Xs rather 
-than numbers. The grid program output could be something like this:
-
-```
-Width of multiplication table: 10
-Height of multiplication table: 8
-
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-X X X X X X X X X X
-```
-
-Once you've made the grid, expand the program to print real numbers. 
-To make the table look nice, you should right-justify the numbers when 
-you print them. This can be done using the format() function as such:
-
-```python
-print("The number is: {0:>3}".format(1))         # Prints "The number is:   1"
-print("The number is: {0:>3}".format(12))        # Prints "The number is:  12"
-print("The number is: {0:>3}".format(123))       # Prints "The number is: 123"
-```
+Write and submit a Python program that prints a multiplication table. The user 
+must be prompted to give the width and height of the table before it is printed.
 
 The final multiplication table should look like this:
 
-```
 Width of multiplication table: 10
 Height of multiplication table: 8
 
@@ -47,6 +20,10 @@ Height of multiplication table: 8
   6  12  18  24  30  36  42  48  54  60
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
-```
+"""
+n1 = int(input("Width of multiplication table: "))
+n2 = int(input("Height of multiplication table: "))
 
-    
+for i in range(1,n1):
+    for j in range (1, n2):
+        print(i*j),
